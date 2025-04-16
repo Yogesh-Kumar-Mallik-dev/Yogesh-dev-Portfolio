@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yogesh's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <img src="Images/logo_for_web.png" alt="Logo" class="logo">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#progress">Progress</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+    </ul>
+  </nav>
+  <!-- Navbar End-->
+
+  <!-- Hero Section -->
+  <header id="hero">
+    <div class="hero-container">
+      <h1>Hi, I'm Yogesh Kumar Mallik</h1>
+      <p>Student | Aspiring Full-Stack Web Developer | Future Full-Time Game Developer</p>
+    </div>
+  </header>
+  <!-- Hero Section End-->
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project-card stage-4">Portfolio Website</div>
+      <div class="project-card stage-2">GoDot </div>
+      <div class="project-card stage-3">2D Platformer Game</div>
+    </div>
+  </section>
+  <!-- Projects Section End -->
+
+  <!-- Progress Flowchart Section -->
+  <section id="progress">
+    <h2>Progress Tracker</h2>
+    <div class="progress-flow">
+      <div class="flow-item completed">HTML, CSS </div>
+      <div class="flow-item completed">Responsive Design</div>
+      <div class="flow-item in-progress">Game Development</div>
+      <div class="flow-item not-started">JavaScript</div>
+    </div>
+  </section>
+  <!-- Progress Flowchart Section End-->
+
+  <!-- Roadmap Section -->
+  <section id="roadmap">
+    <h2>Future Roadmap</h2>
+    <ol>
+      <li>Master GdScript</li>
+      <li>Master React</li>
+      <li>Learn GoDot Completly </li>
+      <li>Make an Farmsim game</li>
+      <li>Create aRouge Like Rpg</li>
+    </ol>
+  </section>
+  <!-- Roadmap Section End -->
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Yogesh Kumar Mallik | All rights reserved</p>
+    <a href="https://github.com/Yogesh-Kumar-Mallik-dev" target="_blank">
+      <img src="Images/Github_icon.png" alt="GitHub" class="footer-icon">
+    </a>
+    <a href="mailto:yogeshkumarmallikdev@gmail.com" target="_blank">
+      <img src="Images/Gmail_logo.png" alt="Gmail" class="footer-icon">
+    </a>
+  </footer>
+  <!-- Footer End -->
+
+  <!--Script-->
+  <script>
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('nav');
+      if (window.scrollY > 10) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+   <!--Script End -->
+
+</body>
+</html>
