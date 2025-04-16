@@ -214,7 +214,7 @@ nav.scrolled {
 
   .progress-flow {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
   }
 
   .flow-item {
