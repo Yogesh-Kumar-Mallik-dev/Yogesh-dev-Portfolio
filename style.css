@@ -104,11 +104,39 @@ h2 {
   transition: width 2s ease;
 }
 
-.project-card.stage-1::after { width: 20%; }
-.project-card.stage-2::after { width: 40%; }
-.project-card.stage-3::after { width: 60%; }
-.project-card.stage-4::after { width: 80%; }
-.project-card.stage-5::after { width: 100%; }
+.project-card.stage-1::after {
+  width: 0%;
+}
+.project-card.stage-1::after {
+  width: 10%;
+}
+.project-card.stage-2::after {
+  width: 20%;
+}
+.project-card.stage-3::after {
+  width: 30%;
+}
+.project-card.stage-4::after {
+  width: 40%;
+}
+.project-card.stage-5::after {
+  width: 50%;
+}
+.project-card.stage-6::after {
+  width: 60%;
+}
+.project-card.stage-7::after {
+  width: 70%;
+}
+.project-card.stage-8::after {
+  width: 80%;
+}
+.project-card.stage-9::after {
+  width: 90%;
+}
+.project-card.stage-10::after {
+  width: 100%;
+}
 
 .progress-flow {
   display: flex;
