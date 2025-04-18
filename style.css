@@ -151,9 +151,9 @@ h2 {
   gap: 1.5rem;
   overflow-x: auto;
   scroll-behavior: smooth;
-  padding: 1rem 0;
+  padding: 1rem 1.03rem;
   flex-wrap: nowrap;
-  width: calc(100px * 4 + 1.5rem * 3); /* Space for exactly 4 items + gaps */
+  width: calc(100px * 5.5 + 1.5rem * 3); /* Space for exactly 4 items + gaps */
   justify-content: flex-start;
 }
 
