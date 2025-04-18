@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yogesh's Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
   <!-- Navbar -->
@@ -43,13 +44,19 @@
   <!-- Progress Flowchart Section -->
   <section id="progress">
     <h2>Progress Tracker</h2>
+    <div class="progress-container">
+      <button class="scroll-btn left">&lt;</button>
       <div class="progress-flow">
         <div class="flow-item completed">HTML, CSS</div>
         <div class="flow-item completed">Responsive Design</div>
         <div class="flow-item in-progress">Game Development</div>
         <div class="flow-item in-progress">C language</div>
         <div class="flow-item not-started">JavaScript</div>
+        <!-- Add more items here as needed -->
       </div>
+      <button class="scroll-btn right">&gt;</button>
+    </div>
+  </section>
   <!-- Progress Flowchart Section End-->
 
   <!-- Roadmap Section -->
@@ -89,6 +96,24 @@
       }
     });
   </script>
+
+<script>
+ const flow = document.querySelector('.progress-flow');
+const leftBtn = document.querySelector('.scroll-btn.left');
+const rightBtn = document.querySelector('.scroll-btn.right');
+
+const scrollAmount = (100 + 24) * 4;  // 100px width + 24px gap per item x 4
+
+leftBtn.addEventListener('click', () => {
+  flow.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+});
+
+rightBtn.addEventListener('click', () => {
+  flow.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+});
+
+</script>
+
    <!--Script End -->
 
 </body>
